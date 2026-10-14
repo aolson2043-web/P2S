@@ -22,3 +22,6 @@ All eight pages include Apple's native banner for app ID 6806831565. Test in Saf
 
 PRIVACY
 The privacy page includes a website analytics disclosure and its effective date is updated to October 14, 2026. The app's workout, Health and ruck records are not included in the website event code.
+
+TOP DOWNLOAD AND ABOUT HIGHLIGHT UPDATE
+The top navigation download button and homepage hero download button now use P2S blue with white text. A visible header download button appears on mobile even when the menu is closed. On tablet, the top navigation download button remains visible. The requested sentence under About > 03 / The Principle is highlighted in P2S blue. All existing Google Analytics, UTM, native Smart App Banner and QR tracking changes are included in this package. Upload this combined package in place of the previous one when ready.

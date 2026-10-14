@@ -11,3 +11,12 @@
 .app-download-card figcaption{font-size:13px;color:var(--muted,#b1bdcc);line-height:1.4;margin-top:10px}
 @media(max-width:1320px){.app-download-card{margin-left:5%;margin-right:5%}}
 @media(max-width:767px){.app-download-card{grid-template-columns:1fr;padding:24px;gap:0;margin-top:24px;margin-bottom:32px}.app-download-card .download-qr{display:none}.app-download-card .download-heading{align-items:flex-start;gap:14px}.app-download-card .download-heading img{width:52px;height:52px}.app-download-card .button{max-width:100%;font-size:14px}}
+
+/* Make the App Store download action prominent at the top of every page. */
+.site-header nav .nav-cta,.site-header .header-download,.fitness-hero .hero-actions .button-primary[href*="apps.apple.com"]{background:var(--blue,#359bff);color:#fff;border-color:var(--blue,#359bff);font-weight:700}
+.site-header nav .nav-cta span,.site-header .header-download span,.fitness-hero .hero-actions .button-primary[href*="apps.apple.com"] span{color:inherit}
+.site-header nav .nav-cta:hover,.site-header .header-download:hover,.fitness-hero .hero-actions .button-primary[href*="apps.apple.com"]:hover{background:#2088ed;color:#fff;border-color:#2088ed}
+.header-download{display:none}
+.p2s-principle-highlight{color:var(--blue,#359bff);font-weight:700}
+@media(min-width:801px) and (max-width:1100px){.site-header{flex-wrap:wrap}.site-header nav{flex-wrap:wrap}.site-header nav .nav-cta{display:inline-flex;align-items:center}}
+@media(max-width:800px){.site-header .brand{order:1}.site-header .menu-toggle{order:2}.site-header .header-download{display:flex;order:3;flex-basis:100%;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:12px 18px;border:1px solid var(--blue,#359bff);border-radius:8px;font-size:16px}.site-header nav{order:4}.site-header nav .nav-cta{display:none}}
