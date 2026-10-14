@@ -1,0 +1,46 @@
+{
+  "qr_url": "https://p2sfitness.com/download/?utm_source=p2sfitness&utm_medium=qr&utm_campaign=website&utm_content=desktop_download_card",
+  "pages": {
+    "index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 6,
+      "qr_card": true
+    },
+    "training/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 5,
+      "qr_card": true
+    },
+    "ruck-tracker/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 5,
+      "qr_card": true
+    },
+    "apple-watch/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 5,
+      "qr_card": true
+    },
+    "about/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 5,
+      "qr_card": true
+    },
+    "support/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 2,
+      "qr_card": false
+    },
+    "privacy/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 2,
+      "qr_card": false
+    }
+  },
+  "measurement_id": "G-F4FX8FFV2Y",
+  "events": [
+    "app_store_click",
+    "app_store_qr_scan",
+    "app_store_redirect"
+  ]
+}

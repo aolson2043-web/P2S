@@ -1,0 +1,13 @@
+.app-download-card{max-width:var(--width,1240px);margin:32px auto 48px;padding:36px 40px;display:grid;grid-template-columns:minmax(0,1fr) 224px;gap:36px;align-items:center;background:var(--panel,#121b25);border:1px solid var(--line,#293443);border-radius:16px}
+.app-download-card .download-heading{display:flex;align-items:center;gap:18px;margin-bottom:14px}
+.app-download-card .download-heading img{width:64px;height:64px;border-radius:14px;flex-shrink:0}
+.app-download-card .eyebrow{margin:0 0 5px;color:var(--blue,#359bff)}
+.app-download-card h2{font-size:clamp(30px,3vw,42px);line-height:1.1}
+.app-download-card .download-copy>p{max-width:590px;margin:0 0 20px}
+.app-download-card .download-platforms{font-size:13px;margin:14px 0 0;color:var(--muted,#b1bdcc)}
+.app-download-card .download-qr{margin:0;text-align:center}
+.app-download-card .download-qr a{display:block;background:#fff;border-radius:12px;overflow:hidden}
+.app-download-card .download-qr img{display:block;width:224px;height:224px;max-width:100%}
+.app-download-card figcaption{font-size:13px;color:var(--muted,#b1bdcc);line-height:1.4;margin-top:10px}
+@media(max-width:1320px){.app-download-card{margin-left:5%;margin-right:5%}}
+@media(max-width:767px){.app-download-card{grid-template-columns:1fr;padding:24px;gap:0;margin-top:24px;margin-bottom:32px}.app-download-card .download-qr{display:none}.app-download-card .download-heading{align-items:flex-start;gap:14px}.app-download-card .download-heading img{width:52px;height:52px}.app-download-card .button{max-width:100%;font-size:14px}}

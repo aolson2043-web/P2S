@@ -1,0 +1,24 @@
+P2S website: Google Analytics, Smart App Banners, UTM links and QR download update
+
+PUBLISHING
+Upload the files in this archive into the matching paths in the P2S GitHub repository, including the new download/ folder and new assets/ files. Merge these files with the existing assets folder; preserve your high-quality artwork. This package includes all changes from the earlier App Download Update, so use this combined package. Commit when you are ready to publish. No repository files were changed by preparing this package.
+
+GOOGLE ANALYTICS
+Google measurement ID G-F4FX8FFV2Y is installed on the seven existing pages and the QR landing page. Google Analytics receives its normal page-view events plus:
+app_store_click — a click on a P2S App Store link, with download_placement and download_page parameters identifying the button and page.
+app_store_qr_scan — arrival at the QR download landing page with utm_medium=qr.
+app_store_redirect — arrival at the download landing page through other sources.
+These events measure website activity and App Store referrals. App installations need Apple's separate campaign attribution.
+
+After publishing, use Google Analytics Realtime to test page visits and download events. In Events, mark app_store_click and app_store_qr_scan as key events if you want those actions highlighted. Create event-scoped custom dimensions for download_placement and download_page to see those breakdowns in reports. Cookie/browser blocking can prevent Analytics delivery. The download buttons and QR redirect still work when the Google tag is blocked.
+
+QR CODE
+The SVG displayed on desktop and the downloadable PNG now encode a p2sfitness.com/download/ URL with UTM parameters. That page attempts to report the QR visit, then opens the App Store. It waits at most two seconds and always offers a manual download button. Publish download/index.html with the rest of the files so the QR destination exists.
+QR UTMs: source=p2sfitness, medium=qr, campaign=website, content=desktop_download_card.
+App Store button URLs retain source=p2sfitness, medium=website, campaign=website; content identifies the button placement.
+
+SMART APP BANNERS
+All eight pages include Apple's native banner for app ID 6806831565. Test in Safari on an iPhone. Safari controls display and remembers dismissed banners. Website JavaScript cannot measure native banner taps. For banner and install attribution, generate a real campaign link in App Store Connect > Analytics > Acquisition > Campaigns and provide its pt token for a future update.
+
+PRIVACY
+The privacy page includes a website analytics disclosure and its effective date is updated to October 14, 2026. The app's workout, Health and ruck records are not included in the website event code.
