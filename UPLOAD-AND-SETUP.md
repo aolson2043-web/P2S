@@ -56,3 +56,12 @@ These are general legal and fitness-risk drafts for your review, not a legal opi
 For a future app build, consider links to these pages in Settings and a clear acknowledgment of training risks before the first workout. This website update does not alter the app or App Store Connect license settings.
 
 References checked: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ and https://developer.apple.com/help/app-store-connect/manage-app-information/provide-a-custom-license-agreement/ . General exercise safety reference: https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389 .
+
+
+## AI workout import helper — October 15, 2026
+
+/import-workout/ is linked from Training > Custom Program Builder, the Support FAQ, and the footer. It supports any AI service by providing a common prompt, a plain-text prompt download, an example import file and an optional local format check. It does not call an AI API or send workout text to the website server. The prompt preserves the supplied workout and requires clarification for missing rest values or unsupported schedules.
+
+The checker uses the parser and movement alias data from PreparedToServe-4.0.28-RC42-Importer-Fix.zip, the latest importer build located for this task. The same source parser is emitted to browser JavaScript; the extra file-format checks flag unsupported structures and do not change the file. The app source remains unchanged. AI-generated content still needs review for exercise choices, prescriptions, calendar mapping and fitness suitability. Passing the format check does not prove that an arbitrary AI reproduced every source detail correctly.
+
+The import prompt includes an RPE-label compatibility rule because tab-separated rows containing the literal RPE label can be skipped by the current parser. It also asks before converting empty rest days or uneven weekly training schedules, which the current app does not preserve as empty calendar slots. Files use actual tabs, not the text <TAB>.

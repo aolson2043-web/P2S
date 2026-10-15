@@ -1,0 +1,51 @@
+P2S Import Format Example
+
+## Week 1
+
+Day 1 - Strength A
+Exercise	Sets	Reps	Rest	Notes
+Weighted Pull-Up	3	5	3 min	Controlled repetitions
+Bench Press	3	8	90 sec	Effort: 7
+
+Day 2 - Open Ruck
+Exercise	Sets	Reps	Rest	Notes
+Ruck	1	30 min	As needed	Record the pack load
+
+Day 3 - Strength B
+Exercise	Sets	Reps	Rest	Notes
+Weighted Dip	3	6	120 sec	-
+Barbell Row	3	8	90 sec	-
+
+Day 4 - Open Ruck
+Exercise	Sets	Reps	Rest	Notes
+Ruck	1	30 min	As needed	-
+
+Day 5 - Strength C
+Exercise	Sets	Reps	Rest	Notes
+Back Squat	3	5	180 sec	-
+Plank	3	30 sec	60 sec	-
+
+## Week 2
+
+Day 1 - Strength A
+Exercise	Sets	Reps	Rest	Notes
+Weighted Pull-Up	3	5	3 min	Controlled repetitions
+Bench Press	3	8	90 sec	Effort: 7
+
+Day 2 - Open Ruck
+Exercise	Sets	Reps	Rest	Notes
+Ruck	1	35 min	As needed	Record the pack load
+
+Day 3 - Strength B
+Exercise	Sets	Reps	Rest	Notes
+Weighted Dip	3	6	120 sec	-
+Barbell Row	3	8	90 sec	-
+
+Day 4 - Open Ruck
+Exercise	Sets	Reps	Rest	Notes
+Ruck	1	35 min	As needed	-
+
+Day 5 - Strength C
+Exercise	Sets	Reps	Rest	Notes
+Back Squat	3	5	180 sec	-
+Plank	3	30 sec	60 sec	-

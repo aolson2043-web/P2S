@@ -1,0 +1,42 @@
+Turn the workout text at the end of this prompt into a UTF-8 plain-text .txt file for the Prepared to Serve (P2S) custom program importer. This request works with ChatGPT, Gemini, Claude, or another AI assistant. Follow the file-format rules below regardless of the service you are.
+
+PRESERVE THE SOURCE
+- Preserve the source workout names, exercises, working sets, reps, durations, distances, training days, and explicit week-by-week progression. Do not redesign the plan, invent exercises, fill gaps, or silently omit details.
+- If anything is missing, ambiguous, or unsupported by this format, ask a concise question before creating the file. Do not choose values for me. If an exercise offers alternatives, ask which one to use.
+- Use one program only. If the source contains alternative programs, ask which one to convert.
+
+OUTPUT STRUCTURE
+- Start with one short program title on the first line. Do not put instructions before it.
+- Write every week explicitly, using headings such as ## Week 1 and ## Week 2. Expand only the repetitions and progression that the source explicitly specifies. If the total duration or repeat pattern is missing, ask before generating the file.
+- Under each week, use Day 1 - Session Name, Day 2 - Session Name, and so on. Keep each session on its stated day. Do not run week 2 into week 1 as additional days.
+- Immediately below each training-day heading, repeat this exact five-column header, with actual TAB characters between the column names:
+Exercise	Sets	Reps	Rest	Notes
+- Write one exercise per line, using exactly five columns separated by actual TAB characters (Unicode U+0009). Do not write the literal text <TAB>, spaces in place of tabs, commas, a Markdown table, or vertical-bar separators.
+- Do not leave a column empty. Use a single hyphen (-) for notes when there are none. Do not put tabs or line breaks inside a cell.
+- A strength row has the exercise name, an integer number of working sets, the stated rep target, a fixed rest time with units, and notes. Example:
+Bench Press	3	8	90 sec	-
+- A timed row uses the stated duration in Reps, with its unit, such as 30 sec or 5 min. Preserve distance targets with their units when applicable.
+- Put cues and other instructions in Notes, not the exercise name. Preserve loading instructions and source units in Notes. Do not add a sixth column.
+- Keep warm-up work out of the working Sets count. Preserve any source warm-up information in the relevant exercise's Notes. If it cannot be represented clearly there, ask me before generating the file.
+
+REST AND RUCKS
+- For working strength sets, use one explicit fixed rest time in Rest, such as 90 sec or 3 min. If the source gives a range or does not specify rest, ask which fixed rest time I want. Do not choose one yourself.
+- For a ruck session, use the exact exercise name Ruck, one set, and the source duration or distance in Reps. Use As needed in Rest only when the source explicitly permits it or I confirm it. Preserve pack load, terrain, and other source instructions in Notes. Example, only when those details are supplied:
+Day 2 - Open Ruck
+Exercise	Sets	Reps	Rest	Notes
+Ruck	1	30 min	As needed	Pack load as specified in the source
+
+COMPATIBILITY CHECKS BEFORE OUTPUT
+- The builder supports up to 12 weeks, up to 7 training slots per week, and 1-12 working sets per exercise. If the source exceeds these limits, ask me how to handle it before generating anything. Do not truncate it.
+- P2S does not store an empty rest-day heading as a training session. If the source includes a rest/off day, an empty recovery day, a skipped calendar day, or a different number of sessions across weeks, ask me how I want it mapped to P2S training slots. Do not silently renumber the source or invent a rest exercise to fill a slot. Create the file only after I confirm a compatible mapping.
+- Keep a consistent number and order of training slots across weeks unless I explicitly approve a supported mapping. Keep the source's actual training-day numbers and week order after that agreement.
+- Preserve RPE cues in Notes using the label Effort rather than the letters RPE or the phrase rate of perceived effort. For example, RPE 7 becomes Effort: 7. Preserve the value and any explanation. This avoids an importer rule that can otherwise skip the row.
+- If supersets, circuits, intervals, changing prescriptions within a set, nonnumeric set counts, or other special instructions cannot be represented without losing how the workout is executed, ask me how to handle them. Do not flatten or alter the workout silently.
+- Before returning the file, check that every exercise row has exactly five tab-separated columns; all working-set counts, rep/duration targets and fixed strength rest times are present; every prescribed week and training day is represented; and no commentary has become an exercise row.
+
+DELIVERY
+When all required details are clear, create a downloadable UTF-8 .txt file. The file itself must contain only the program title, week/day headings, repeated table headers, and workout rows. No introduction, explanatory paragraphs, coaching instructions outside Notes, Markdown fences, citations, or closing text belong in the file.
+If your service cannot attach a file, provide the exact plain text with actual tabs so I can save it as a plain-text .txt file. Do not claim that you created an attachment if you did not.
+
+Workout text:
+[PASTE THE WORKOUT FROM YOUR ARTICLE OR PLAN HERE]
