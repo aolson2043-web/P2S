@@ -43,3 +43,16 @@ New pages:
 ## App Store Connect
 
 Verify the Support URL is https://p2sfitness.com/support/ and the Marketing URL is https://p2sfitness.com/. Keep the Privacy Policy URL at https://p2sfitness.com/privacy/. The home schema describes the $49.99 USD offer as the optional lifetime Pro unlock, not an automatic trial charge. Current App Store pricing and the listing’s website links could not be independently fetched; confirm them in App Store Connect.
+
+
+## Pricing, Terms and exercise-risk update
+
+The About closing actions are now spaced apart with an outlined training button and a blue download button. The same spacing treatment applies to other closing sections with adjacent buttons. Download cards and the home hero explain free download, the 7-day trial, and the $49.99 USD one-time lifetime Pro unlock. Compact header/footer logo sizing is preserved.
+
+New pages: /terms/ and /disclaimer/. Both are linked from the footer. Training and ruck pages also link directly to exercise-risk information. The sitemap includes both new pages.
+
+These are general legal and fitness-risk drafts for your review, not a legal opinion or a guarantee of enforceability. Have a qualified attorney review them before relying on them, including the correct legal identity of the operator and the terms applicable in your markets. The pages preserve mandatory consumer rights and avoid a blanket injury release. They do not replace Apple’s applicable app license. Adding a website notice alone does not establish that an app user saw or accepted it.
+
+For a future app build, consider links to these pages in Settings and a clear acknowledgment of training risks before the first workout. This website update does not alter the app or App Store Connect license settings.
+
+References checked: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/ and https://developer.apple.com/help/app-store-connect/manage-app-information/provide-a-custom-license-agreement/ . General exercise safety reference: https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389 .

@@ -11,47 +11,52 @@
       "tagged_download_links": 0,
       "qr_card": false
     },
-    "ruck-tracker/index.html": {
-      "smart_app_banner": true,
-      "tagged_download_links": 6,
-      "qr_card": true
-    },
-    "training/index.html": {
-      "smart_app_banner": true,
-      "tagged_download_links": 6,
-      "qr_card": true
-    },
     "apple-watch/index.html": {
       "smart_app_banner": true,
       "tagged_download_links": 6,
       "qr_card": true
+    },
+    "terms/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 3,
+      "qr_card": false
     },
     "privacy/index.html": {
       "smart_app_banner": true,
       "tagged_download_links": 3,
       "qr_card": false
     },
+    "disclaimer/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 3,
+      "qr_card": false
+    },
+    "ruck-tracker/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 6,
+      "qr_card": true
+    },
     "support/index.html": {
       "smart_app_banner": true,
       "tagged_download_links": 3,
       "qr_card": false
+    },
+    "training/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 6,
+      "qr_card": true
     },
     "about/index.html": {
       "smart_app_banner": true,
       "tagged_download_links": 6,
       "qr_card": true
     },
-    "training/gladiator-standard/index.html": {
-      "smart_app_banner": true,
-      "tagged_download_links": 6,
-      "qr_card": true
-    },
-    "training/forged-operator/index.html": {
-      "smart_app_banner": true,
-      "tagged_download_links": 6,
-      "qr_card": true
-    },
     "training/forged-performance/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 6,
+      "qr_card": true
+    },
+    "training/operational-strength/index.html": {
       "smart_app_banner": true,
       "tagged_download_links": 6,
       "qr_card": true
@@ -66,7 +71,12 @@
       "tagged_download_links": 6,
       "qr_card": true
     },
-    "training/operational-strength/index.html": {
+    "training/forged-operator/index.html": {
+      "smart_app_banner": true,
+      "tagged_download_links": 6,
+      "qr_card": true
+    },
+    "training/gladiator-standard/index.html": {
       "smart_app_banner": true,
       "tagged_download_links": 6,
       "qr_card": true
