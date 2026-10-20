@@ -45,3 +45,9 @@
 .gear-closing h2{margin:0 auto 28px}
 @media(max-width:800px){.gear-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gear-hero{min-height:0}}
 @media(max-width:580px){.gear-grid{grid-template-columns:1fr}.gear-art{height:220px}.gear-copy{padding:24px}.gear-copy h3{font-size:23px}.gear-shop-section{padding:52px 0 65px}.gear-hero{padding-top:48px}.gear-hero-mark{padding:24px}.gear-hero-mark img{width:118px;height:118px}.gear-closing{padding:54px 5%}}
+
+/* Actual product photographs from the P2S Fourthwall listings. */
+.gear-art{height:320px;padding:16px;background:radial-gradient(ellipse at center,#263746,#111b25 76%)}
+.gear-art:before,.gear-art:after{display:none}
+.gear-art img{position:relative;display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:580px){.gear-art{height:330px;padding:16px}}

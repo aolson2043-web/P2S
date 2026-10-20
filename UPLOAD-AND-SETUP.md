@@ -70,3 +70,5 @@ The import prompt includes an RPE-label compatibility rule because tab-separated
 ## P2S Gear storefront
 
 The site now includes /gear/ and a Shop Gear link in the navigation and footer, plus a short product feature on the home page. The three product cards link directly to the supplied Fourthwall listings. Fourthwall remains responsible for product details, checkout, payment, fulfillment and shipping. Product links include UTM source/placement values, and the site's Google Analytics listener records `fourthwall_product_click` events. Review the current product pricing and availability on Fourthwall before launch; prices are intentionally not hard-coded on the P2S site.
+
+The gear cards now use locally bundled product photographs pulled from the supplied Fourthwall listings. All product buttons read Buy Now. The images do not depend on remote image URLs at runtime.
