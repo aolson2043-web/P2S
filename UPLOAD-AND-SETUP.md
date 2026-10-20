@@ -65,3 +65,8 @@ References checked: https://www.apple.com/legal/internet-services/itunes/dev/std
 The checker uses the parser and movement alias data from PreparedToServe-4.0.28-RC42-Importer-Fix.zip, the latest importer build located for this task. The same source parser is emitted to browser JavaScript; the extra file-format checks flag unsupported structures and do not change the file. The app source remains unchanged. AI-generated content still needs review for exercise choices, prescriptions, calendar mapping and fitness suitability. Passing the format check does not prove that an arbitrary AI reproduced every source detail correctly.
 
 The import prompt includes an RPE-label compatibility rule because tab-separated rows containing the literal RPE label can be skipped by the current parser. It also asks before converting empty rest days or uneven weekly training schedules, which the current app does not preserve as empty calendar slots. Files use actual tabs, not the text <TAB>.
+
+
+## P2S Gear storefront
+
+The site now includes /gear/ and a Shop Gear link in the navigation and footer, plus a short product feature on the home page. The three product cards link directly to the supplied Fourthwall listings. Fourthwall remains responsible for product details, checkout, payment, fulfillment and shipping. Product links include UTM source/placement values, and the site's Google Analytics listener records `fourthwall_product_click` events. Review the current product pricing and availability on Fourthwall before launch; prices are intentionally not hard-coded on the P2S site.

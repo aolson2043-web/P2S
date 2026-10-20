@@ -6,8 +6,18 @@
     if (!link || event.defaultPrevented) return;
     let url;
     try { url = new URL(link.href, window.location.href); } catch (_) { return; }
-    if (url.hostname !== 'apps.apple.com' || !/\/id6806831565(?:\/|$)/.test(url.pathname)) return;
     if (typeof window.gtag !== 'function') return;
+    if (link.hasAttribute('data-merch-link') && url.hostname === 'prepared-to-serve-shop.fourthwall.com') {
+      window.gtag('event', 'fourthwall_product_click', {
+        send_to: MEASUREMENT_ID, link_url: url.href,
+        product: link.dataset.merchLink || 'p2s_gear',
+        link_text: (link.textContent || '').trim().slice(0, 100),
+        page_path: window.location.pathname,
+        placement: url.searchParams.get('utm_content') || 'merch_link'
+      });
+      return;
+    }
+    if (url.hostname !== 'apps.apple.com' || !/\/id6806831565(?:\/|$)/.test(url.pathname)) return;
     const parameters = {
       send_to: MEASUREMENT_ID,
       link_url: url.href,
