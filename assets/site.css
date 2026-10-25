@@ -16,7 +16,7 @@
 
 /* Fourthwall gear storefront */
 .gear-feature{border-top:1px solid var(--line)}
-.gear-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.gear-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
 .gear-card{display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(160deg,#141f2b,#0d141c);border:1px solid var(--line);border-radius:15px;transition:border-color .2s,transform .2s}
 .gear-card:hover{border-color:#3d6688;transform:translateY(-3px)}
 .gear-art{height:248px;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#123957 0,#0b1825 48%,#09111a 82%);border-bottom:1px solid #20364a;color:#0a84ff}
@@ -43,7 +43,7 @@
 .gear-shop-section>.content-heading h2+p{margin-top:22px}
 .gear-closing{text-align:center;padding:72px 5%;border-top:1px solid var(--line);background:radial-gradient(ellipse at bottom,#164c7733,transparent 70%)}
 .gear-closing h2{margin:0 auto 28px}
-@media(max-width:800px){.gear-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gear-hero{min-height:0}}
+@media(max-width:1000px){.gear-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gear-hero{min-height:0}}
 @media(max-width:580px){.gear-grid{grid-template-columns:1fr}.gear-art{height:220px}.gear-copy{padding:24px}.gear-copy h3{font-size:23px}.gear-shop-section{padding:52px 0 65px}.gear-hero{padding-top:48px}.gear-hero-mark{padding:24px}.gear-hero-mark img{width:118px;height:118px}.gear-closing{padding:54px 5%}}
 
 /* Actual product photographs from the P2S Fourthwall listings. */
@@ -51,3 +51,9 @@
 .gear-art:before,.gear-art:after{display:none}
 .gear-art img{position:relative;display:block;width:100%;height:100%;object-fit:contain}
 @media(max-width:580px){.gear-art{height:330px;padding:16px}}
+
+/* CSS product rendering for the P2S ruck patch, using the official boxed-2 mark. */
+.gear-art-patch{background:radial-gradient(ellipse at center,#263746,#111b25 76%)}
+.patch-preview{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:min(78%,410px);aspect-ratio:1.55;border:3px solid #252c33;border-radius:20px;background:linear-gradient(145deg,#1b2026,#080a0d 72%);box-shadow:inset 0 0 0 1px #ffffff22,inset 0 0 22px #000a,0 18px 38px #0008}
+.patch-preview:after{content:"";position:absolute;inset:8px;border:1px dashed #ffffff32;border-radius:13px;pointer-events:none}
+.gear-art-patch .patch-preview img{width:auto;height:auto;max-width:64%;max-height:78%;object-fit:contain;border-radius:12px;box-shadow:0 7px 20px #0007}
