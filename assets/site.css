@@ -52,8 +52,6 @@
 .gear-art img{position:relative;display:block;width:100%;height:100%;object-fit:contain}
 @media(max-width:580px){.gear-art{height:330px;padding:16px}}
 
-/* CSS product rendering for the P2S ruck patch, using the official boxed-2 mark. */
+/* Fourthwall product photo: black embroidered P2S ruck patch. */
 .gear-art-patch{background:radial-gradient(ellipse at center,#263746,#111b25 76%)}
-.patch-preview{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:min(78%,410px);aspect-ratio:1.55;border:3px solid #252c33;border-radius:20px;background:linear-gradient(145deg,#1b2026,#080a0d 72%);box-shadow:inset 0 0 0 1px #ffffff22,inset 0 0 22px #000a,0 18px 38px #0008}
-.patch-preview:after{content:"";position:absolute;inset:8px;border:1px dashed #ffffff32;border-radius:13px;pointer-events:none}
-.gear-art-patch .patch-preview img{width:auto;height:auto;max-width:64%;max-height:78%;object-fit:contain;border-radius:12px;box-shadow:0 7px 20px #0007}
+.gear-art-patch img{object-fit:contain}
