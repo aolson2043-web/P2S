@@ -16,7 +16,7 @@
 
 /* Fourthwall gear storefront */
 .gear-feature{border-top:1px solid var(--line)}
-.gear-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.gear-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .gear-card{display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(160deg,#141f2b,#0d141c);border:1px solid var(--line);border-radius:15px;transition:border-color .2s,transform .2s}
 .gear-card:hover{border-color:#3d6688;transform:translateY(-3px)}
 .gear-art{height:248px;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#123957 0,#0b1825 48%,#09111a 82%);border-bottom:1px solid #20364a;color:#0a84ff}
